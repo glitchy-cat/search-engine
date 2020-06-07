@@ -1,7 +1,5 @@
 document.getElementById('getText').addEventListener('click', getText);
 
-
-
 function getText() {
     var game = document.querySelector('#site-search').value;
     var url = 'https://api.rawg.io/api/games?page_size=5&search=' + encodeURIComponent(game);
@@ -11,7 +9,7 @@ function getText() {
         .then((data) => {
             console.log(data)
             let output = '<h2>Results</h2>';
-            data.results.forEach(function(post) {
+            data.results.forEach(function (post) {
                 console.log(post)
                 output += `
                 <div>
@@ -23,5 +21,5 @@ function getText() {
             });
             document.getElementById('output').innerHTML = output;
         })
-    /*.catch((err) => console.log(error)) */
+    .catch((err) => console.log(error))
 }   
