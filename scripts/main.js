@@ -21,5 +21,5 @@ function getText() {
             });
             document.getElementById('output').innerHTML = output;
         })
-    .catch((err) => console.log(error))
-}   
+        .catch((err) => console.log(error))
+}

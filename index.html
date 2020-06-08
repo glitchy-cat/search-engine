@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,18 +12,31 @@
 
 <body>
 
-    <div class="container">
-        <form method="GET">
-            <label for="site-search">Search</label>
-            <input type="text" id="site-search" placeholder="Search for a game here!">
-            <button  type ="button" id="getText">Go!</button>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Game info</a>
+            </div>
+        </div>
+    </nav>
 
-        </form>
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="text-center">Search for your favorite videogame</h3>
+            <form id="searchForm" method="GET">
+                <input type="text" class="form-control" id="site-search" placeholder="Search for a game here!">              
+                <button type="button" class="" id="getText">Go!</button>
+            </form>
+        </div>
     </div>
 
-    <div class="results"></div>
-    <div id="output"></div>
+    <div class ="container">
+        <div id="output" class="row"></div>
+    </div>
+
+
     <script type="text/javascript" src="scripts/main.js"></script>
-        
+
 </body>
+
 </html>
