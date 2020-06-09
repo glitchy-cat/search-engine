@@ -16,7 +16,7 @@ function getText() {
                     <div class = "well text-center">
                     <img src="${post.background_image}"></img>
                     <h2> ${post.name}</h2>
-                    <a onclick="gameSelected('${post.id}')" class="btn btn-primary" href="#">Game Details</a>
+                    <a onclick="gameSelected('${post.id}')" class="btn btn-info" href="#">Game Details</a>
                     </div>
                 </div>
             `;
