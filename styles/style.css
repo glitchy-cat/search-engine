@@ -1,13 +1,13 @@
-#output img {
+#output img, #game img {
     width:100%;
   }
   
   @media(min-width:960px){
-    #output .col-md-3 .well{
+    #output .col-md-4 .well{
       height: 390px;
     }
   
-    #output .col-md-3 img{
+    #output .col-md-4 img{
       height:240px;
     }
   }

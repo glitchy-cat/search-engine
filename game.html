@@ -20,23 +20,16 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h3 class="text-center">Search for your favorite videogame</h3>
-            <form id="searchForm" method="GET">
-                <input type="text" class="form-control" id="site-search" placeholder="Search for a game here!">              
-                <button type="button" class="" id="getText">Go!</button>
-            </form>
-        </div>
-    </div>
-
     <div class ="container">
-        <div id="output" class="row"></div>
+        <div id="game" class="well"></div>
     </div>
 
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        getGame();
+    </script>
 
 </body>
 
