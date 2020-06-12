@@ -23,7 +23,7 @@ function getText() {
             });
             document.getElementById('output').innerHTML = output;
         })
-        .catch((err) => console.log(error))
+        .catch((error) => console.log(error))
 }
 
 function gameSelected(id) {
@@ -39,28 +39,28 @@ function getGame() {
     url = url.trim();
     fetch(url)
         .then((response) => response.json())
-        .then((data) =>
-            console.log(data));
-            let game = data; 
-    let details = `
+        .then((data) => {
+            console.log(data.id)
+
+            let game = `
             <div class ="row">
                 <div class ="col-md-4">
-                    <img src ="${game.background_image}" class="thumbnail">
+                    <img src ="${data.background_image}" class="thumbnail">
                 </div>
                 <div class ="col-md-8">
-                    <h2>${game.name}</h2>
+                    <h2>${data.name}</h2>
                     <ul class="list-group">
-                    <li class="list-group-item"><strong>Released</strong>: ${game.released}</li>
-                    <li class="list-group-item"><strong>Rating</strong>: ${game.rating}</li>
-                    <li class="list-group-item"><strong>Platforms</strong>: ${game.platforms}</li> 
-                    <li class="list-group-item"><strong>Description</strong>: ${game.description}</li>
+                    <li class="list-group-item"><strong>Released</strong>: ${data.released}</li>
+                    <li class="list-group-item"><strong>Rating</strong>: ${data.rating}</li>
+                    <li class="list-group-item"><strong>Platforms</strong>: ${data.platforms}</li> 
+                    <li class="list-group-item"><strong>Description</strong>: ${data.description}</li>
 
                     </ul>
                 </div>
             </div>
             <a href="index.html" class="btn btn-success">Back to search</a>
             `;
-            document.getElementById('game').innerHTML = details;
-            
-    
+            document.getElementById('game').innerHTML = game;
+        });
+
 };
