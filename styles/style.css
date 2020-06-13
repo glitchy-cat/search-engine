@@ -11,3 +11,11 @@
       height:240px;
     }
   }
+
+  .card {
+    margin: 1rem;
+  }
+
+  h2 {
+   font-size: 2rem; 
+  }
