@@ -14,9 +14,9 @@ function getText() {
                 output += `           
                 <div class="card bg-light mb-3 col-md-3">
                     <div class ="well text-center">
-                    <img src="${post.background_image}"></img>
+                    <img  class ="mt-3" src="${post.background_image}"></img>
                     <h4> ${post.name}</h2>
-                    <a onclick="gameSelected('${post.id}')" class="btn btn-info" href="game.html">Game Details</a>
+                    <a onclick="gameSelected('${post.id}')" class="btn btn-info mt-3 mb-3" href="game.html">Game Details</a>
                     </div>
                 </div>
             `;
@@ -45,7 +45,7 @@ function getGame() {
             let game = `
             <div class ="row justify-content-center">
                 <div class ="col-md-4">
-                    <img src ="${data.background_image}" class="thumbnail">
+                    <img src ="${data.background_image}" class="responsive">
                 </div>
                 <div class ="col-md-8">
                     <h2>${data.name}</h2>
