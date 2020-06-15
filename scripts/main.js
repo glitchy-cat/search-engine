@@ -51,10 +51,9 @@ function getGame() {
                     <h2>${data.name}</h2>
                     <ul class="list-group">
                     <li class="list-group-item"><strong>Released</strong>: ${data.released}</li>
-                    <li class="list-group-item"><strong>Rating</strong>: ${data.rating} out of 5</li>
-                    <li class="list-group-item"><strong>Platforms</strong>: ${data.platforms}</li> 
+                    <li class="list-group-item"><strong>Rating</strong>: ${data.rating} out of ${data.rating_top}</li>
+                    <li class="list-group-item"><strong>Website</strong>: ${data.website}</li> 
                     <li class="list-group-item"><strong>Description</strong>: ${data.description}</li>
-
                     </ul>
                 </div>
                 <a href="index.html" class="btn btn-success mt-3 mb-3">Back to search</a>
