@@ -12,10 +12,10 @@ function getText() {
             data.results.forEach(function (post) {
                 console.log(post.id)
                 output += `           
-                <div class="card bg-light mb-3 col-md-3">
+                <div class="card grow bg-light mb-3 col-md-3">
                     <div class ="well text-center">
                     <img  class ="mt-3" src="${post.background_image}"></img>
-                    <h4> ${post.name}</h2>
+                    <h4>${post.name}</h4>
                     <a onclick="gameSelected('${post.id}')" class="btn btn-info mt-3 mb-3" href="game.html">Game Details</a>
                     </div>
                 </div>
@@ -57,8 +57,8 @@ function getGame() {
 
                     </ul>
                 </div>
+                <a href="index.html" class="btn btn-success mt-3 mb-3">Back to search</a>
             </div>
-            <a href="index.html" class="btn btn-success">Back to search</a>
             `;
             document.getElementById('game').innerHTML = game;
         });
