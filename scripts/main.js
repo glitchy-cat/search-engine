@@ -52,7 +52,7 @@ function getGame() {
                     <ul class="list-group">
                     <li class="list-group-item"><strong>Released</strong>: ${data.released}</li>
                     <li class="list-group-item"><strong>Rating</strong>: ${data.rating} out of ${data.rating_top}</li>
-                    <li class="list-group-item"><strong>Website</strong>: ${data.website}</li> 
+                    <li class="list-group-item"><strong>Website</strong>: <a href="${data.website}">${data.website}</a></li> 
                     <li class="list-group-item"><strong>Description</strong>: ${data.description}</li>
                     </ul>
                 </div>
