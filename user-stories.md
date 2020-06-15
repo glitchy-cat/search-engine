@@ -1,4 +1,4 @@
-Name: Jimmy Bull
+Developer:  Jimmy Bull
 
 ----USER STORIES-----
 
@@ -8,6 +8,7 @@ As a fan of paricular game series, I want to search for all the games in a serie
 
 
 ----Future improvements----
+
 i) I would add the ability to  filter and search by genre, platform, or developer.
 
 ii) I would add the ability to show suggested games based on the user's search preferences.
