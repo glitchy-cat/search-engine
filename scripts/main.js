@@ -2,7 +2,7 @@ document.getElementById('getSearch').addEventListener('click', getText);
 
 function getText() {
     var game = document.querySelector('#site-search').value;
-    var url = 'https://api.rawg.io/api/games?search=&key=69c8a7bf771b4a5e82d47219d75eca24' + encodeURIComponent(game);
+    var url = 'https://api.rawg.io/api/games?search=&key=2192794498b04d5fb67cfa474264042e' + encodeURIComponent(game);
     url = url.trim();
     fetch(url)
         .then((response) => response.json())
